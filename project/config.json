@@ -1,0 +1,16 @@
+{
+  "long_channels": [],
+  "short_channels": [
+    {
+      "url": "https://www.youtube.com/@TikCover",
+      "sort_mode": "most_popular",
+      "rescan": false
+    }
+  ],
+  "upload_settings": {
+    "category_id": "24",
+    "language": "en",
+    "made_for_kids": false,
+    "privacy_status": "public"
+  }
+}
