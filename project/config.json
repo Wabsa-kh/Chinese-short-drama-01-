@@ -1,12 +1,22 @@
 {
-  "long_channels": [],
-  "short_channels": [
+  "long_channels": [
     {
-      "url": "https://www.youtube.com/@TikCover",
+      "url": "https://www.youtube.com/@NanaDrama-y6z",
+      "sort_mode": "most_popular",
+      "rescan": false
+    },
+    {
+      "url": "https://www.youtube.com/@KISHORTDRAMA",
+      "sort_mode": "most_popular",
+      "rescan": false
+    },
+    {
+      "url": "https://www.youtube.com/@MiniVerse-Drama",
       "sort_mode": "most_popular",
       "rescan": false
     }
   ],
+  "short_channels": [],
   "upload_settings": {
     "category_id": "24",
     "language": "en",
