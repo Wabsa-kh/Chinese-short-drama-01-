@@ -106,6 +106,7 @@ def update_channel_queues(channel_list, uploaded_ids, all_queues, is_shorts=Fals
             'extract_flat': extract_flat,
             'quiet': True,
             'no_warnings': True,
+            'ignoreerrors': True,
             'extractor_args': {'youtube': {'player_client': ['ios', 'android', 'tv']}}
         }
         
@@ -238,10 +239,15 @@ def attempt_upload(video_data, accounts, settings, mode='long'):
             
             return uploaded_id
         except HttpError as e:
-            if e.resp.status in [403, 429]: continue # Quota next
+            if e.resp.status in [403, 429]:
+                print(f"   ⚠️ Account Quota Exceeded (403/429). Trying next account...")
+                continue
             print(f"   ❌ API Error: {e}"); break
         except Exception as e:
             print(f"   ❌ Error: {e}"); continue
+    
+    if not accounts:
+        print("   ❌ No accounts found in TOKENS_FILE or BOT_TOKENS.")
     return None
 
 # ==========================================
