@@ -117,10 +117,14 @@ def update_channel_queues(channel_list, uploaded_ids, all_queues, is_shorts=Fals
                 info = ydl.extract_info(scan_url, download=False)
                 if 'entries' in info:
                     valid_entries = []
-                    for e in info['entries']:
+                    total_entries = len(info['entries'])
+                    for i, e in enumerate(info['entries']):
                         if e is None: continue
                         video_id = e.get('id')
                         if not video_id: continue
+                        
+                        if not extract_flat and (i + 1) % 50 == 0:
+                            print(f"      ... Processed {i + 1}/{total_entries} videos")
                         
                         video_url = f"https://www.youtube.com/watch?v={video_id}"
                         if video_id not in uploaded_ids and video_url not in all_queues[queue_key]:
