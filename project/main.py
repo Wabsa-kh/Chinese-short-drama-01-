@@ -11,6 +11,9 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from googleapiclient.errors import HttpError
 
+class MembersOnlyContent(Exception):
+    pass
+
 # --- FILE PATHS ---
 CONFIG_FILE = "config.json"
 DATABASE_FILE = "database.json"
@@ -187,6 +190,9 @@ def download_video(url):
                 'video_id': info.get('id')
             }
     except Exception as e:
+        error_msg = str(e)
+        if "members-only content" in error_msg.lower() or "join this channel" in error_msg.lower():
+            raise MembersOnlyContent(url)
         print(f"   ❌ Download failed: {e}")
     return None
 
@@ -276,7 +282,14 @@ def process_track(mode, channel_list, database, tokens, settings):
             target_url = queue[0]
             print(f"\n🎯 [{mode.upper()}]: {target_url}")
             
-            video_data = download_video(target_url)
+            try:
+                video_data = download_video(target_url)
+            except MembersOnlyContent:
+                database['queues'][queue_key].pop(0)
+                save_json(DATABASE_FILE, database)
+                print(f"   ⚠️ Skipped members-only content, moving to next.")
+                continue
+                
             if video_data:
                 up_id = attempt_upload(video_data, tokens['accounts'], settings, mode)
                 if up_id:
