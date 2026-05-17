@@ -478,10 +478,13 @@
     "XHe4Fxd7J6o",
     "2ICTcCiG5GA",
     "ZweL11cAerU",
-    "Hmqzle7E4e4"
+    "Hmqzle7E4e4",
+    "tMhw3GzWscc"
   ],
   "queues": {
     "https://www.youtube.com/@NanaDrama-y6z#long": [
+      "https://www.youtube.com/watch?v=D6U-eSwIl64",
+      "https://www.youtube.com/watch?v=NAHhThtrUF8",
       "https://www.youtube.com/watch?v=V2lIPagH5pw",
       "https://www.youtube.com/watch?v=kcpVGNPVAu8",
       "https://www.youtube.com/watch?v=SwduL_-h5fU",
@@ -923,7 +926,6 @@
       "https://www.youtube.com/watch?v=7SNhguoh06s"
     ],
     "https://www.youtube.com/@KISHORTDRAMA#long": [
-      "https://www.youtube.com/watch?v=Jma44JAFg0M",
       "https://www.youtube.com/watch?v=JIiRi_fTBWo",
       "https://www.youtube.com/watch?v=PIgDobZJEdw",
       "https://www.youtube.com/watch?v=hN4DZHrqtPA",
@@ -1415,7 +1417,6 @@
       "https://www.youtube.com/watch?v=FJvI7rBixYM"
     ],
     "https://www.youtube.com/@MiniVerse-Drama#long": [
-      "https://www.youtube.com/watch?v=tMhw3GzWscc",
       "https://www.youtube.com/watch?v=0B649_eOfHE",
       "https://www.youtube.com/watch?v=mxKuN377xiI",
       "https://www.youtube.com/watch?v=NDZLHjl3D7Y",
@@ -1870,6 +1871,6 @@
   "state": {
     "last_channel_index": 3,
     "last_short_index": 1,
-    "last_long_index": 0
+    "last_long_index": 2
   }
 }
