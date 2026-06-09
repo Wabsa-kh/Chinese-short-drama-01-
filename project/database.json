@@ -564,7 +564,8 @@
     "0mZLpk1SJaw",
     "YZ8Z6_Tview",
     "7c4NmNVB-Z8",
-    "gLpomZo9wHs"
+    "gLpomZo9wHs",
+    "hr0RHYdqzsI"
   ],
   "queues": {
     "https://www.youtube.com/@NanaDrama-y6z#long": [
@@ -1541,6 +1542,6 @@
   "state": {
     "last_channel_index": 3,
     "last_short_index": 1,
-    "last_long_index": 1
+    "last_long_index": 0
   }
 }
