@@ -655,10 +655,13 @@
     "ijVIqcMJqBg",
     "DJBCDiIoeUw",
     "V3dmFW6k9sE",
-    "WYQHxXNTXD4"
+    "WYQHxXNTXD4",
+    "yNaAuCXRi5U"
   ],
   "queues": {
     "https://www.youtube.com/@NanaDrama-y6z#long": [
+      "https://www.youtube.com/watch?v=Ki_Ex2pAaCY",
+      "https://www.youtube.com/watch?v=VNummKzdy_0",
       "https://www.youtube.com/watch?v=oY7x7o4OosQ",
       "https://www.youtube.com/watch?v=nkJJanoS2jQ",
       "https://www.youtube.com/watch?v=qlA3A7qN_8Q",
@@ -1176,6 +1179,7 @@
       "https://www.youtube.com/watch?v=7SNhguoh06s"
     ],
     "https://www.youtube.com/@KISHORTDRAMA#long": [
+      "https://www.youtube.com/watch?v=Jma44JAFg0M",
       "https://www.youtube.com/watch?v=JIiRi_fTBWo",
       "https://www.youtube.com/watch?v=PIgDobZJEdw",
       "https://www.youtube.com/watch?v=hN4DZHrqtPA",
@@ -1670,6 +1674,6 @@
   "state": {
     "last_channel_index": 3,
     "last_short_index": 1,
-    "last_long_index": 0
+    "last_long_index": 1
   }
 }
