@@ -739,11 +739,11 @@
     "t8Pje4pVFY4",
     "Tcy74JcONXo",
     "ADku5wBlzKA",
-    "L2GfBxp8OqM"
+    "L2GfBxp8OqM",
+    "biKU5W-mf3w"
   ],
   "queues": {
     "https://www.youtube.com/@NanaDrama-y6z#long": [
-      "https://www.youtube.com/watch?v=biKU5W-mf3w",
       "https://www.youtube.com/watch?v=sWyyY38HM9Y",
       "https://www.youtube.com/watch?v=0hgucVkg9q4",
       "https://www.youtube.com/watch?v=ubHghhT759o",
@@ -1822,6 +1822,6 @@
   "state": {
     "last_channel_index": 3,
     "last_short_index": 1,
-    "last_long_index": 1
+    "last_long_index": 0
   }
 }
